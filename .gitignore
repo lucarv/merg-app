@@ -1,0 +1,8 @@
+#node
+node_modules
+
+# android
+platforms/android
+
+# res
+res
