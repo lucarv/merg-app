@@ -5,9 +5,10 @@
     <title>Remove Meter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/del.js"></script>
+    <script src="js/index.js"></script>
 
 
 </head>
@@ -28,8 +29,8 @@
                     <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-cog"></span> Config</a></li>
-                </ul>
+                        <li><a href="config.html"><span class="glyphicon glyphicon-cog"></span> Config</a></li>
+                    </ul>
                 <ul class="nav navbar-nav">
                     <li><a href="add.html">Provision New</a></li>
                     <li><a href="del.html">Remove Meter</a></li>
@@ -40,11 +41,17 @@
     </nav>
 
     <div class="container">
-        <label class="col-xs-4 col-form-label">Meter Id</label>
-        <input class="col-xs-8" type="text" id="meterId"><br><br>
+        <input class="col-xs-12" type="text" id="meterId" placeholder="enter the meter id">
+        <br><br>
 
-        <button class="btn btn-xs btn-primary" id='theButton'>Remove Meter</button>
+        <button class="btn btn-xs btn-primary" id='delButton'>Remove Meter</button>
         </form>
+        <br><br>
+        <hr><br>
+        <jumbotron>
+            <b><p>RESULT</p></b>
+            <div id="content"><input readonly class="col-xs-12" type="text" id="result"></div>
+        </jumbotron>
     </div>
 
 </body>
