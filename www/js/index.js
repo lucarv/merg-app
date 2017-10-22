@@ -42,7 +42,7 @@ $(document).ready(function () {
         $("#content").text('enpoint configured');
     })
 
-    $("#loginButton").click(function () {
+    $("#loginButton").click(function () {       
         localStorage.setItem("agentId", $("#agId").val());
         $("#content").text("agent " + localStorage.getItem("agentId") + " succesfully logged in");
     })
